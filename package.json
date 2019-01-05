@@ -1,0 +1,23 @@
+{
+  "name": "preact-node",
+  "version": "1.0.0",
+  "description": "Node.js with preact frontend",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasangenc0/node-preact.git"
+  },
+  "keywords": [
+    "preact",
+    "nodejs"
+  ],
+  "author": "github.com/hasangenc0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hasangenc0/node-preact/issues"
+  },
+  "homepage": "https://github.com/hasangenc0/node-preact#readme"
+}
