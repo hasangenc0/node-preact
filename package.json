@@ -7,7 +7,7 @@
     "build": "webpack",
     "build:prod": "webpack -p",
     "watch": "webpack --watch",
-    "styles" : "./node_modules/.bin/tailwind build ./src/styles/styles.css -c ./tailwind.js -o ./public/css/app.css",
+    "styles": "./node_modules/.bin/tailwind build ./src/styles/styles.css -c ./tailwind.js -o ./public/css/app.css",
     "start": "nodemon server.js",
     "test": "test"
   },
@@ -45,6 +45,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "tailwindcss": "^0.7.3",
+    "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack-cli": "^3.2.0"
   }
 }

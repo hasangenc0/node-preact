@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import 'preact/devtools';
 import Navigation from './navigation';
+import 'preact/devtools';
 
 class App extends Component {
 

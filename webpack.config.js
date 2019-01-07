@@ -1,5 +1,5 @@
 const path = require("path");
-const tailwindcss = require('tailwindcss');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: "./src/js/app.js",
@@ -26,6 +26,9 @@ module.exports = {
         'create-react-class': 'preact-compat/lib/create-react-class',
         'react-dom-factories': 'preact-compat/lib/react-dom-factories'
     }
+  },
+  optimization: {
+    minimizer: [new UglifyJsPlugin()],
   },
   output: {
     path: path.resolve(__dirname, "public/js/"),
