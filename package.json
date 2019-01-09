@@ -7,9 +7,13 @@
     "build": "webpack",
     "build:prod": "webpack -p",
     "watch": "webpack --watch",
+    "precommit": "NODE_ENV=production lint-staged",
     "styles": "./node_modules/.bin/tailwind build ./src/styles/styles.css -c ./tailwind.js -o ./public/css/app.css",
     "start": "nodemon server.js",
-    "test": "test"
+    "debug": "node --inspect-brk server.js",
+    "test": "test",
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix"
   },
   "repository": {
     "type": "git",
@@ -43,7 +47,10 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
+    "eslint": "^5.12.0",
+    "eslint-plugin-react": "^7.12.3",
     "tailwindcss": "^0.7.3",
     "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack-cli": "^3.2.0"
