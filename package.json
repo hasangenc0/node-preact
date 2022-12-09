@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/hasangenc0/node-preact#readme",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "nodemon": "^1.18.9",
     "preact": "^8.4.2",
     "preact-compat": "^3.18.4",
